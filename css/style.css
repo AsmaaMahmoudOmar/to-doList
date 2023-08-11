@@ -1,0 +1,27 @@
+body{
+    background-color: #6f42c1;
+    padding: 50px;
+}
+li{
+    position: relative;
+    display: flex;
+   
+    align-items: center;
+}
+li::before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    left: -35px;
+   border: 1px solid lightgrey;
+    position: absolute;
+}
+li.checked{
+   color: #ccc;
+   text-decoration: line-through;
+}
+li.checked::before{
+    background-color: darkred;
+    border:none ;
+}
